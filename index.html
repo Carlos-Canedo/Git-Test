@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git-Test</title>
+</head>
+<body>
+    <header>
+        <h1>Git Test</h1>
+    </header>
+    <main>
+        <div class="basic-commands">
+            <h2>Basic commands</h2>
+            <ul>
+                <li><b>git init:</b> create a new git project or start a project using git.</li>
+                <li><b>add +file:</b> to pass files from working directory to staging area.</li>
+                <li><b>git status:</b> used to see where are files (directory, staging area).</li>
+                <li><b>git commit:</b> to pass files from staging area to repository (create a snapshoot of code version).</li>
+                <li><b>git push:</b> to upload to a remote repository.</li>
+                <li><b>git pull:</b> get new changes from other users</li>
+                <li><b>git clone:</b> makes a copy from central version to a personal computer.</li>
+            </ul>
+        </div>
+        <div class="other-commands">
+            <h2>Other commands</h2>
+            <ul>
+                <li><b>ls:</b> command to list directories and files.</li>
+                <li><b>pwd:</b> helps to see which path we are.</li>
+                <li><b>clear:</b> clear console</li>
+            </ul>
+        </div>
+        <div class="create-repository">
+            <h2>Create repository</h2>
+            <ul>
+                <li>Right click in the project folder.</li>
+                <li>Select “Git Bash Here” (a terminal will open)</li>
+                <li>With “ls” we can see all the files on the folder selected.</li>
+                <li>Put “git init” in the bash to initialize empty fit repository in the folder (it will create a hiddenolder in which it will be saved the local repository).</li>
+                <li>“git status” to see the status of our files.</li>
+                <li>“git add +file_name” to add a file to status area.</li>
+                <li>Config email with “git config –global user.email “my_email@example.com””.</li>
+                <li>Config name with “git config –global user.name “my_name””.</li>
+                <li>“git commit” to create a start point in our repository (it will open a code editor).</li>
+                <li>Press “i” key to start to write on the editor, write the commit title.</li>
+                <li>Press scape key and write “:wq” to get back.</li>
+                <li>“git log” to watch all the commits made.</li>
+                <li>“git status” to see for some modify file.</li>
+            </ul>
+        </div>
+        <div class="discard-changes">
+            <h2>Discard changes until the last commit (only works if the file wasn't added to repository)</h2>
+            <ul>
+                <li>“git checkout -- +file_name”.</li>
+            </ul>
+        </div>
+        <div class="amend-commit">
+            <h2>Amend commit</h2>
+            <ul>
+                <li>“git commit –amend” and you will acces to the actual commit.</li>
+            </ul>
+        </div>
+        <div class="see-changes-off">
+            <h2>See all changes of a file from the commit</h2>
+            <ul>
+                <li>“git diff +file_name”.</li>
+            </ul>
+        </div>
+        <div class="add-changes">
+            <h2>Add changes of a file</h2>
+            <ul>
+                <li>“git add +file_name”.</li>
+            </ul>
+        </div>
+        <div class="make-commit">
+            <h2>Make a new commit</h2>
+            <ul>
+                <li>“git commit”, press I key and write the commit title, esc key and write “:wq” to get back.</li>
+                <li>Option two: “git commit -m “commit_title””.</li>
+            </ul>
+        </div>
+        <div class="ignore-files">
+            <h2>Ignore files from our repository</h2>
+            <ul>
+                <li>Create a file in the folder main repository with the name “.gitignore”.</li>
+                <li>Write in all the files you want to ignore from the repository.</li>
+                <li>Add “.gitignore” to repository (“git add .gitignore“).</li>
+                <li>Optionally make a commit for the changes (“git commit”, press I key and write the commit title, esc key and write “:wq” to get back.).</li>
+            </ul>
+        </div>
+        <div class="create-branch">
+            <h2>Create Branch (default “master”)</h2>
+            <ul>
+                <li>Consult branch “git branch”.</li>
+                <li>Create branch “git branch branch_name”.</li>
+                <li>Get into branch: “git checkout “branch_name””.</li>
+            </ul>
+        </div>
+        <div class="add-all-to-repository">
+            <h2>Add all files to repository</h2>
+            <ul>
+                <li>“git add .”.</li>
+            </ul>
+        </div>
+        <div class="create-github-repository">
+            <h2>Create a git-hub repository</h2>
+            <ul>
+                <li>Open repository.</li>
+                <li>Select new.</li>
+                <li>Give a name to repository.</li>
+                <li>Click on create repository button.</li>
+                <li>Put the remote instruction made by git-hub in the batch of your local repository (example: git remote add origin https://github.com/Carlos-Canedo/Git-Test.git).</li>
+                <li>Upload to remote repository: git push -u origin master (master means the batch which was added the remote origin).</li>
+            </ul>
+        </div>
+        <div class="clone-repository">
+            <h2>Clone repository</h2>
+            <ul>
+                <li>Go to the folder in which you want to clone the repository.</li>
+                <li>Open the GitBatch console.</li>
+                <li>Put the next instruction: “git clone +url_Git-hub-repository” (example: git clone https://github.com/Carlos-Canedo/Git-Test.git).</li>
+            </ul>
+        </div>
+    </main>
+</body>
+</html>
