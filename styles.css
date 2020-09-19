@@ -63,3 +63,29 @@ h2 {
     left: 1.2em;
     width: calc(100% - 1.2rem);
 }
+
+/* responsive */
+@media screen and (max-width: 900px) {
+    header,
+    main {
+        width: 90%;
+    }
+}
+@media screen and (max-width: 520px) {
+    h1 {
+        font-size: 1.4rem;
+    }
+    h2 {
+        font-size: 1rem;
+    }
+    .div-container ul {
+        margin: 0;
+        left: 0em;
+    }
+    li {
+        font-size: 0.9rem;
+    }
+    main {
+        padding-top: 1.6em;
+    }
+}
