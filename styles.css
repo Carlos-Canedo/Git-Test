@@ -2,10 +2,10 @@
 :root {
     --main-font: sans-serif;
     --font-size: 16px;
-    --main-color: rgb(173, 230, 209);
-    --second-color: #222;
-    --main-modal-color: rgba(173, 230, 209, 0.85);
-    --second-modal-color: rgba(34, 34 ,34, 0.85);
+    --main-color: #302952;
+    --second-color: #EEF2F3;
+    --main-modal-color: #222;
+    --second-modal-color:#FBFBFB;
     --container-width: 1200px;
 }
 html {
@@ -22,4 +22,44 @@ html {
 body {
     margin: 0;
     overflow-x: hidden;
+}
+
+/* page Style */
+header {
+    width: 800px;
+    background-color: var(--main-color);
+    padding: 1.2em;
+    margin: 0 auto;
+    margin-top: 0.8rem;
+}
+h1 {
+    margin: 0;
+    margin-left: 2rem;
+    color: var(--second-modal-color);
+}
+main {
+    width: 800px;
+    margin: 0 auto;
+    background-color: var(--second-color);
+    padding: 1rem;
+    padding-top: 3em;
+    padding-bottom: 8em;
+    margin-bottom: 4rem;
+}
+h2 {
+    margin: 0;
+}
+.div-container {
+    background-color: var(--second-modal-color);
+    border-radius: 0.4em;
+    margin: auto;
+    margin-bottom: 0.8em;
+    padding: 1rem;
+    width: 90%;
+}
+.div-container ul {
+    padding: 1rem;
+    position: relative;
+    left: 1.2em;
+    width: calc(100% - 1.2rem);
 }

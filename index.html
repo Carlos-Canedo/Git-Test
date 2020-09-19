@@ -11,7 +11,7 @@
         <h1>Git Test</h1>
     </header>
     <main>
-        <div class="basic-commands">
+        <div class="div-container basic-commands">
             <h2>Basic commands</h2>
             <ul>
                 <li><b>git init:</b> create a new git project or start a project using git.</li>
@@ -23,7 +23,7 @@
                 <li><b>git clone:</b> makes a copy from central version to a personal computer.</li>
             </ul>
         </div>
-        <div class="other-commands">
+        <div class="div-container other-commands">
             <h2>Other commands</h2>
             <ul>
                 <li><b>ls:</b> command to list directories and files.</li>
@@ -31,13 +31,13 @@
                 <li><b>clear:</b> clear console</li>
             </ul>
         </div>
-        <div class="create-repository">
+        <div class="div-container create-repository">
             <h2>Create repository</h2>
             <ul>
                 <li>Right click in the project folder.</li>
                 <li>Select “Git Bash Here” (a terminal will open)</li>
                 <li>With “ls” we can see all the files on the folder selected.</li>
-                <li>Put “git init” in the bash to initialize empty fit repository in the folder (it will create a hiddenolder in which it will be saved the local repository).</li>
+                <li>Put “git init” in the bash to initialize empty fit repository in the folder (it will create a hidden folder in which it will be saved the local repository).</li>
                 <li>“git status” to see the status of our files.</li>
                 <li>“git add +file_name” to add a file to status area.</li>
                 <li>Config email with “git config –global user.email “my_email@example.com””.</li>
@@ -49,38 +49,38 @@
                 <li>“git status” to see for some modify file.</li>
             </ul>
         </div>
-        <div class="discard-changes">
+        <div class="div-container discard-changes">
             <h2>Discard changes until the last commit (only works if the file wasn't added to repository)</h2>
             <ul>
                 <li>“git checkout -- +file_name”.</li>
             </ul>
         </div>
-        <div class="amend-commit">
+        <div class="div-container amend-commit">
             <h2>Amend commit</h2>
             <ul>
                 <li>“git commit –amend” and you will acces to the actual commit.</li>
             </ul>
         </div>
-        <div class="see-changes-off">
+        <div class="div-container see-changes-off">
             <h2>See all changes of a file from the commit</h2>
             <ul>
                 <li>“git diff +file_name”.</li>
             </ul>
         </div>
-        <div class="add-changes">
+        <div class="div-container add-changes">
             <h2>Add changes of a file</h2>
             <ul>
                 <li>“git add +file_name”.</li>
             </ul>
         </div>
-        <div class="make-commit">
+        <div class="div-container make-commit">
             <h2>Make a new commit</h2>
             <ul>
                 <li>“git commit”, press I key and write the commit title, esc key and write “:wq” to get back.</li>
                 <li>Option two: “git commit -m “commit_title””.</li>
             </ul>
         </div>
-        <div class="ignore-files">
+        <div class="div-container ignore-files">
             <h2>Ignore files from our repository</h2>
             <ul>
                 <li>Create a file in the folder main repository with the name “.gitignore”.</li>
@@ -89,7 +89,7 @@
                 <li>Optionally make a commit for the changes (“git commit”, press I key and write the commit title, esc key and write “:wq” to get back.).</li>
             </ul>
         </div>
-        <div class="create-branch">
+        <div class="div-container create-branch">
             <h2>Create Branch (default “master”)</h2>
             <ul>
                 <li>Consult branch “git branch”.</li>
@@ -97,16 +97,17 @@
                 <li>Get into branch: “git checkout “branch_name””.</li>
             </ul>
         </div>
-        <div class="add-all-to-repository">
+        <div class="div-container add-all-to-repository">
             <h2>Add all files to repository</h2>
             <ul>
                 <li>“git add .”.</li>
             </ul>
         </div>
-        <div class="create-github-repository">
+        <div class="div-container create-github-repository">
             <h2>Create a git-hub repository</h2>
             <ul>
-                <li>Open repository.</li>
+                <li>Login github.</li>
+                <li>Open repositories.</li>
                 <li>Select new.</li>
                 <li>Give a name to repository.</li>
                 <li>Click on create repository button.</li>
@@ -114,7 +115,7 @@
                 <li>Upload to remote repository: git push -u origin master (master means the batch which was added the remote origin).</li>
             </ul>
         </div>
-        <div class="clone-repository">
+        <div class="div-container clone-repository">
             <h2>Clone repository</h2>
             <ul>
                 <li>Go to the folder in which you want to clone the repository.</li>
